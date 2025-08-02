@@ -1,7 +1,135 @@
-.editTaskForm{
-    display: none;
+/*estilo geral*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body{
+    height: 100vh;
+    background-color: #fafbfc;
+    font-family:Open Sans;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+#list{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 26, 88);
+    width: 28em;
+    max-width: 28em;
+    min-height: 22rem;
+    height: auto;
+    padding: 2rem 0 2rem 0;
+    border-radius: 1em;
+    gap:2em
+   }
+
+h1{
+    font-family:League Spartan;
+    font-size: 2.5em;
+    color:#fafbfc
 }
 
-.editTaskForm{
-    display: inline;
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 3rem;
+    max-height: 4rem;
+    gap: 1em;
+    padding: 1rem;
+    background-color: #6f439488;
+    border-radius: 0.9rem;
+}
+
+.infoTask {
+  display: flex;
+  gap: 1rem;
+
+}
+
+input {
+  padding: 9px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 0 2.5px rgb(177, 33, 76);
+}
+
+.descriptionTask {
+  color: #0f0f0f;
+  font-size: 1rem;
+}
+
+.add{
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgb(177, 33, 76);
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.taskActions {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.editButton i{
+    color:#d6d6d6;
+    font-size: 1.1rem;
+}
+
+.deleteButton i{
+    color:rgb(233, 136, 136)
+}
+
+
+.confirmEdit {
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgb(177, 33, 76);
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    width: 2.6em;
+    height: 2.6em;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.253);
+}
+
+.hidden{
+ display: none;
+}
+
+.doneLine {
+  text-decoration: line-through;
+  color: rgb(27, 27, 27);
 }
